@@ -20,28 +20,4 @@ namespace AppProyectoFinalCS4Semestre
         public DataSerie[] Data { get; set; }
     }
 
-    [DataContract]
-    public class DataSerie
-    {
-        [DataMember(Name = "fecha")]
-        public string Fecha { get; set; }
-
-        [DataMember(Name = "dato")]
-        public string Data { get; set; }
-    }
-
-    [DataContract]
-    public class SeriesResponse
-    {
-        [DataMember(Name = "series")]
-        public Serie[] Series { get; set; }
-    }
-
-    [DataContract]
-    public class Response
-    {
-        [DataMember(Name = "bmx")]
-        public SeriesResponse seriesResponse { get; set; }
-    }
-
 }

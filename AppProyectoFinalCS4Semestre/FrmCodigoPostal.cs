@@ -54,7 +54,7 @@ namespace AppProyectoFinalCS4Semestre
 
             while ((renglon = sr.ReadLine()) != null)
             {
-                string[] datos = renglon.Split('|');
+                string[] datos = renglon.Split('|', '<', '>');
                 ListViewItem item = new ListViewItem(datos[0]);
                 for (int i = 1; i < datos.Length; i++)
                 {
